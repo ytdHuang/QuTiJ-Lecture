@@ -1,0 +1,33 @@
+{
+	"name": "QuTiJ-Lecture",
+
+	// this repo has a remote — GHCR image names must be lowercase.
+	"image": "ghcr.io/ytdHuang/qutij-lecture:latest",
+
+	// Pre-pull so the image is warm even if the container build step races it.
+	// Workaround for https://github.com/microsoft/vscode-remote-release/issues/7104
+	"initializeCommand": ["bash", "-c", "(docker pull ghcr.io/ytdHuang/qutij-lecture:latest && docker image prune --filter 'label=org.opencontainers.image.source=https://github.com/ytdHuang/QuTiJ-Lecture' -f) || true"],
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"julialang.language-julia",
+				"ms-toolsai.jupyter",
+				"dracula-theme.theme-dracula"
+			],
+			"settings": {
+				"editor.unicodeHighlight.ambiguousCharacters": false,
+				"julia.symbolCacheDownload": true,
+				"julia.enableTelemetry": false,
+				"julia.execution.resultType": "inline, errors in REPL",
+				"julia.juliaup.install.hint": false,
+				"julia.executablePath": "/usr/local/bin/julia",
+				"workbench.startupEditor": "readme"
+			}
+		}
+	}
+
+	// Uncomment if running locally with Docker Desktop and hitting permission
+	// errors due to a host/container UID mismatch (not needed on Codespaces).
+	// "updateRemoteUserUID": true
+}

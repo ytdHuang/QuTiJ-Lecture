@@ -1,1 +1,1 @@
-# QuTiJ-Lecture
+# Quantum Toolbox in Julia (QuTiJ) Lecture

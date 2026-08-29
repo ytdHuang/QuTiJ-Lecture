@@ -1,0 +1,23 @@
+name: Clean up old devcontainer images
+
+# Keeps GHCR from accumulating an untagged/old image for every push. Only the
+# most recent tagged build and anything tagged "latest" are kept.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * 0" # weekly, Sunday 03:00 UTC
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-24.04
+    permissions:
+      packages: write
+    steps:
+      - uses: dataaxiom/ghcr-cleanup-action@v1
+        with:
+          keep-n-tagged: 1
+          exclude-tags: latest
+          delete-untagged: true
+          delete-ghost-images: true
+          delete-partial-images: true
+          delete-orphaned-images: true

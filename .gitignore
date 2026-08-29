@@ -1,0 +1,28 @@
+# VS Code
+.vscode/*
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# MacOS junk files
+.DS_Store
+
+# Julia artifacts
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+deps/build.log
+deps/downloads/
+deps/usr/
+deps/src/
+Manifest*.toml
