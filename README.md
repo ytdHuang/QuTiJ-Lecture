@@ -6,7 +6,7 @@ This repository contains lecture materials for the package [`QuantumToolbox.jl`]
 
 Click the button below to open the tutorials in a new GitHub Codespace:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ytdHuang/QuTiJ-Lecture?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?devcontainer_path=.devcontainer%2Fdevcontainer.json&hide_repo_select=true&ref=main&repo=1350404104&skip_quickstart=true&machine=standardLinux32gb&geo=SoutheastAsia)
 
 A machine type with at least 4 cores is highly recommended. This will consume more of your quota than a 2-core machine; see [Free quota](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces#free-quota) and [Pricing](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces#pricing) for more info.
 
@@ -23,3 +23,7 @@ The steps are generally as follows.
 2. Install Docker and the Dev Containers Extension according to the [documentation](https://code.visualstudio.com/docs/devcontainers/containers#_installation) (on Windows, see notes below).
 3. Click on the following button to clone the repo on your computer: [![Clone in VS Code](https://img.shields.io/badge/Clone_in-VS_Code-blue?logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://vscode.git/clone?url=https://github.com/ytdHuang/QuTiJ-Lecture.git)  
 4. Once you've chosen a destination folder and you've opened the cloned repo, VS Code will prompt you to ***Reopen in Container***; click that button and you're all set.
+
+## Acknowledgement
+
+Special thanks to [@matteosecli](https://github.com/matteosecli) for the technical support.
