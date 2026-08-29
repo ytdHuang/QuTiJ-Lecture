@@ -16,6 +16,7 @@
 				"dracula-theme.theme-dracula"
 			],
 			"settings": {
+				"workbench.colorTheme": "Dracula Theme",
 				"editor.unicodeHighlight.ambiguousCharacters": false,
 				"julia.symbolCacheDownload": true,
 				"julia.enableTelemetry": false,
