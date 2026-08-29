@@ -6,8 +6,3 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-  - package-ecosystem: "julia"
-    target-branch: main
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "weekly"

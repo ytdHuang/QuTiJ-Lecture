@@ -2,11 +2,11 @@
 	"name": "QuTiJ-Lecture",
 
 	// this repo has a remote — GHCR image names must be lowercase.
-	"image": "ghcr.io/ytdHuang/qutij-lecture:latest",
+	"image": "ghcr.io/ytdhuang/qutij-lecture:latest",
 
 	// Pre-pull so the image is warm even if the container build step races it.
 	// Workaround for https://github.com/microsoft/vscode-remote-release/issues/7104
-	"initializeCommand": ["bash", "-c", "(docker pull ghcr.io/ytdHuang/qutij-lecture:latest && docker image prune --filter 'label=org.opencontainers.image.source=https://github.com/ytdHuang/QuTiJ-Lecture' -f) || true"],
+	"initializeCommand": ["bash", "-c", "(docker pull ghcr.io/ytdhuang/qutij-lecture:latest && docker image prune --filter 'label=org.opencontainers.image.source=https://github.com/ytdHuang/QuTiJ-Lecture' -f) || true"],
 
 	"customizations": {
 		"vscode": {
