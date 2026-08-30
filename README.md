@@ -2,7 +2,7 @@
 
 This repository contains lecture materials for the package [`QuantumToolbox.jl`](https://github.com/qutip/QuantumToolbox.jl).
 
-All materials stored in the folder `tutorials/`:
+All materials are stored in the folder `tutorials/`:
 
 0. [Introduction to Julia](./tutorials/0_introduction_to_julia.ipynb)
 1. [Introduction to Quantum Toolbox in Julia (QuantumToolbox.jl)](./tutorials/1_introduction_to_qutij.ipynb)
