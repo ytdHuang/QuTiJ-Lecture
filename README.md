@@ -2,6 +2,13 @@
 
 This repository contains lecture materials for the package [`QuantumToolbox.jl`](https://github.com/qutip/QuantumToolbox.jl).
 
+All materials stored in the folder `tutorials/`:
+
+0. [Introduction to Julia](./tutorials/0_introduction_to_julia.ipynb)
+1. [Introduction to Quantum Toolbox in Julia (QuantumToolbox.jl)](./tutorials/1_introduction_to_qutij.ipynb)
+2. [Larmor Precession](./tutorials/2_Larmor_precession.ipynb)
+3. [Vacuum Rabi Oscillation](./tutorials/3_vacuum_Rabi_oscillation.ipynb)
+
 ## Run on GitHub Codespace
 
 Click the button below to open the tutorials in a new GitHub Codespace:
