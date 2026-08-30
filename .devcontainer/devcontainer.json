@@ -26,7 +26,9 @@
 				"workbench.startupEditor": "readme"
 			}
 		}
-	}
+	},
+
+	"postCreateCommand": "cp --update=none /opt/julia/environments/v1.12/Manifest.toml ."
 
 	// Uncomment if running locally with Docker Desktop and hitting permission
 	// errors due to a host/container UID mismatch (not needed on Codespaces).
