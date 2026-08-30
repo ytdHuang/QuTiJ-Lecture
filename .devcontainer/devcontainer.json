@@ -11,13 +11,16 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"julialang.language-julia",
+				"ms-python.python", // required for detecting julia-kernel path
 				"ms-toolsai.jupyter",
+				"julialang.language-julia",
+				"chneau.resource-monitor",
 				"dracula-theme.theme-dracula"
 			],
 			"settings": {
 				"workbench.colorTheme": "Dracula Theme",
 				"editor.unicodeHighlight.ambiguousCharacters": false,
+				"python.defaultInterpreterPath": "/opt/conda/bin/python3",
 				"julia.symbolCacheDownload": true,
 				"julia.enableTelemetry": false,
 				"julia.execution.resultType": "inline, errors in REPL",
