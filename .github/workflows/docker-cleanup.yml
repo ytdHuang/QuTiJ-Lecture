@@ -1,4 +1,4 @@
-name: Clean up old devcontainer images
+name: Clean up old Docker images
 
 # Keeps GHCR from accumulating an untagged/old image for every push. Only the
 # most recent tagged build and anything tagged "latest" are kept.
@@ -9,11 +9,13 @@ on:
 
 jobs:
   cleanup:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
+      contents: read
       packages: write
     steps:
-      - uses: dataaxiom/ghcr-cleanup-action@v1
+      - name: Delete old packages
+        uses: dataaxiom/ghcr-cleanup-action@v1
         with:
           keep-n-tagged: 1
           exclude-tags: latest
