@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+		"ms-python.python",
+		"ms-toolsai.jupyter",
+		"julialang.language-julia",
+        "chneau.resource-monitor",
+        "dracula-theme.theme-dracula"
+    ]
+}
