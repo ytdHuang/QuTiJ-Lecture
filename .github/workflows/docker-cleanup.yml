@@ -17,6 +17,7 @@ jobs:
       - name: Delete old packages
         uses: dataaxiom/ghcr-cleanup-action@v1
         with:
+          package: qutij-lecture # must be lowercase
           keep-n-tagged: 1
           exclude-tags: latest
           delete-untagged: true
